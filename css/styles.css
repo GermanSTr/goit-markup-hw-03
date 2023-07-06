@@ -319,6 +319,7 @@ address {
   letter-spacing: 0.04em;
   padding: 12px;
   border-radius: 4px;
+  border: 1px solid #e7e9fc;
 }
 
 .menu-list-btn:hover,
