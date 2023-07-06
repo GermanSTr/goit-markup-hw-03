@@ -71,10 +71,12 @@ address {
 }
 
 /** header */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 .header-container {
   display: flex;
-  border-bottom: 1px solid #e7e9fc;
 }
 .logo {
   color: var(--secondary-color);
@@ -94,7 +96,6 @@ address {
 .content {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 
 .header-navigation {
@@ -118,6 +119,10 @@ address {
   letter-spacing: 0.02em;
 }
 
+.content-item-log {
+  padding: 24px 0;
+}
+
 .content-list:hover,
 .content-list:focus {
   text-decoration: underline;
@@ -137,9 +142,10 @@ address {
   color: #404bbf;
 }
 /** main-section-title */
-.quote-container {
-  background-color: #2e2f42;
+
+.quote {
   padding: 188px 0;
+  background-color: #2e2f42;
 }
 
 .quote-title {
@@ -197,12 +203,12 @@ address {
   gap: 24px;
 }
 
-.advantages-container {
+.advantages {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 /** main-section-doing */
-.portfolio-container {
+.portfolio {
   padding-bottom: 120px;
 }
 .portfolio-title {
@@ -224,9 +230,6 @@ address {
 /** main-section-team */
 .team {
   background-color: #f4f4fd;
-}
-
-.team-container {
   padding-bottom: 100px;
   padding-top: 100px;
 }
@@ -275,9 +278,6 @@ address {
 
 .bottom {
   background-color: #2e2f42;
-}
-
-.bottom-container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -313,7 +313,7 @@ address {
   gap: 24px;
 }
 
-.menu-container {
+.menu {
   padding-top: 96px;
   padding-bottom: 120px;
 }
