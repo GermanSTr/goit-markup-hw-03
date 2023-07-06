@@ -13,18 +13,53 @@ body {
   background-color: #fff;
 }
 
-h2 {
-  text-align: center;
-  color: #2e2f42;
-  font-size: var(--header-font-size);
-  font-weight: 700;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 address {
   font-style: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0, auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .list {
@@ -36,6 +71,15 @@ address {
 }
 
 /** header */
+
+.header {
+  padding-top: 25.5px;
+  padding-bottom: 25.5px;
+}
+
+.header-container {
+  display: flex;
+}
 .logo {
   color: var(--secondary-color);
   font-size: 18px;
@@ -48,6 +92,26 @@ address {
 
 .logo-section {
   color: var(--primary-black-color);
+  margin-right: 76px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  /*flex-grow: 1;*/
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 .content-list {
   color: var(--primary-black-color);
@@ -76,9 +140,11 @@ address {
   color: #404bbf;
 }
 /** main-section-title */
-.quote {
+.quote-container {
   background-color: #2e2f42;
+  padding: 188px 316px 292px 316px;
 }
+
 .quote-title {
   color: var(--primary-white-color);
   text-align: center;
@@ -86,6 +152,8 @@ address {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
+  padding-bottom: 48px;
 }
 .quote-button {
   font-family: "Roboto", sans-serif;
@@ -95,6 +163,10 @@ address {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  display: block;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border-radius: 4px;
 }
 .quote-button:hover,
 .quote-button:focus {
@@ -109,20 +181,65 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .advantages-item-text {
   font-size: var(--text-font-size);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  max-width: 264px;
 }
 
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /** main-section-doing */
+
+.portfolio-title {
+  text-align: center;
+  color: #2e2f42;
+  font-size: var(--header-font-size);
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-basis: calc((100% - 48px) / 3);
+  padding-bottom: 120px;
+}
 /** main-section-team */
 .team {
   background-color: #f4f4fd;
 }
 
+.our-team {
+  text-align: center;
+  color: #2e2f42;
+  font-size: var(--header-font-size);
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+  flex-basis: calc((100% - 72px) / 4);
+}
 .team-item {
   background-color: #ffffff;
 }
@@ -133,6 +250,7 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .team-item-text {
   color: var(--secondary-text-color);
@@ -140,6 +258,10 @@ address {
   font-size: var(--text-font-size);
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.team-item-one {
+  margin: 32px 16px;
 }
 
 /** footer */
@@ -166,10 +288,25 @@ address {
   font-size: var(--text-font-size);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
+  margin-top: 16px;
+}
+
+.bottom-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /** portfolio-navigation-btn */
 .menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.menu-container {
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 .menu-list-btn {
   color: var(--secondary-color);
@@ -180,6 +317,8 @@ address {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  padding: 12px;
+  border-radius: 4px;
 }
 
 .menu-list-btn:hover,
@@ -190,12 +329,23 @@ address {
 
 /** app */
 
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+  flex-basis: calc((100% - 48px) / 3);
+  padding-bottom: 120px;
+}
+
 .book-sabtitle {
   color: var(--primary-black-color);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-top: 32px;
+  margin-left: 16px;
+  margin-bottom: 8px;
 }
 
 .book-item-text {
@@ -203,4 +353,5 @@ address {
   font-size: var(--text-font-size);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-left: 16px;
 }
