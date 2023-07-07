@@ -363,8 +363,6 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 32px;
-  margin-left: 16px;
   margin-bottom: 8px;
 }
 
@@ -373,5 +371,4 @@ address {
   font-size: var(--text-font-size);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-left: 16px;
 }
