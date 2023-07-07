@@ -87,6 +87,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+  padding: 24px 0;
 }
 
 .logo-section {
@@ -117,10 +118,6 @@ address {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.content-item-log {
-  padding: 24px 0;
 }
 
 .content-list:hover,
